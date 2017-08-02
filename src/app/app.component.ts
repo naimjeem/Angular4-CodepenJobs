@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         // get dummy data
-        this.http.get('../assets/dummy-data.json')
+        this.http.get('https://jsonplaceholder.typicode.com/posts')
             .map((response: Response) => response.json())
             .subscribe(data => {
                 // set items to json response
