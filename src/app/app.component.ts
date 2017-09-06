@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         // get dummy data
-        this.http.get('https://jsonplaceholder.typicode.com/posts')
+        this.http.get('https://codepen.io/jobs.json')
             .map((response: Response) => response.json())
             .subscribe(data => {
                 // set items to json response

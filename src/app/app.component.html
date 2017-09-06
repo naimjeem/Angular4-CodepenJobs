@@ -1,10 +1,10 @@
 <div>
     <div class="container">
         <div class="text-center">
-            <h1>Angular 4 - Pagination</h1>
+            <h1>Angular 4 - Codepen Jobs</h1>
 
             <!-- items being paged -->
-            <div *ngFor="let item of pagedItems; let i = index">{{(10*(pager.currentPage-1))+(i+1)}} - {{item.title}}</div>
+            <div *ngFor="let item of pagedItems; let i = index">{{(10*(pager.currentPage-1))+(i+1)}} - {{item.company_name}}</div>
 
             <!-- pager -->
             <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
