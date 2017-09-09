@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
             .map((response: Response) => response.json())
             .subscribe(data => {
                 // set items to json response
-                this.allItems = data;
+                this.allItems = data.jobs;
 
                 // initialize to page 1
                 this.setPage(1);
