@@ -17,11 +17,11 @@
         <div *ngFor="let item of pagedItems; let i = index">
             <a href="{{item.url}}" target="_blank">
                 <li class="listing clearfix">
-                <div class="info">
-                    <span class="job_title">{{item.title}}</span>
-                    <span class="job_info">{{item.company_name}}</span>
-                </div>
-                <span class="job_type term">{{ item.term }}</span>
+                    <div class="info">
+                        <span class="job_title">{{item.company_name}}</span>
+                        <span class="job_info">{{item.title}}</span>
+                    </div>
+                    <span class="job_type term">{{ item.term }}</span>
                 </li>
             </a>
         </div>
